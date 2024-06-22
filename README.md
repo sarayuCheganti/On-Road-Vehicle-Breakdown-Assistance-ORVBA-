@@ -1,2 +1,4 @@
-# ClgORVBA
-This is my college project. (on road vehicle breakdown assistance)
+== Backend Blood Management system
+
+MONGO_URI=MONGO_URI
+JWT_SECRET=JWT_SECRET
