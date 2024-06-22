@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Required meta tags--> 
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Bootstrap CSS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+     <!-- CSS -->
+     <link rel="stylesheet" href="new.css">
+     <!-- Aos cdn -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- font-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+     <title>Login page</title>
+     <body>
+         <!-- navbar -->
+   <nav class="navbar  navbar-expand-lg navbar-dark bg-dark" id="home1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ORVBA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./searchMechanics.html">Search Mechanics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./login1.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./signup1.html">Singup</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <!--background img-->
+        <div
+        class="bg-image  container-fluid"
+        id="bgimage"
+        style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/77.webp'); height: 70vh; ">
+        <div class="row justify-content-center" >
+        <div class="col-md-12 text-white text-center " >
+          <h1 id="bgtext">On Road Vehicle Breakdown Assistance</h1>
+          
+        </div>
+        <div class="col-md-2" >
+          
+        </div>
+        <div class="col-md-1">  
+        </div>
+      </div>
+      </div>
+      <!--content-->
+      <div class="container-fluid">
+        <div class="row justify-content-evenly   " id="home">
+            <div class="col-md-3 bg-dark text-white d-flex p-2"  id="content">
+             <i class="bi bi-check2"></i> &nbsp; UserLogin
+            </div>
+            <div class="col-md-3 bg-secondary text-white d-flex p-2 " id="content">
+             <i class="bi bi-check2"></i> &nbsp; Mechanic Login
+            </div>
+        </div><!--content-->
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            form {border: 3px solid; display: inline #f1f1f1;}
+            
+            input[type=text], input[type=password] {
+              width: 30%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+            }
+            
+            button {
+              background-color: #366adb;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 30%;
+            }
+            
+            button:hover {
+              opacity: 0.8;
+            }
+            
+            .cancelbtn {
+              width: 10%;
+              padding: 10px 18px;
+              background-color: #ea3e3e;
+            }
+            
+            .imgcontainer {
+              text-align:left;
+              margin: 24px 0 12px 0;
+            }
+            
+            img.avatar {
+              width: 20%;
+              border-radius: 30%;
+            }
+            .imgcontainer2 {
+              text-align:left;
+              margin: 24px 0 12px 0;
+            }
+            
+            img.avatar2 {
+              width: 35%;
+              border-radius: 30%;
+            }
+            
+            .container {
+              padding: 8px;
+             
+            }
+            
+            span.psw {
+              
+              padding-top: 16px;
+            }
+            
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+              span.psw {
+                 display: block;
+                 float: none;
+              }
+              .cancelbtn {
+                 width: 100%;
+              }
+              .flexbox{
+                display:flex;
+                justify-content: right;
+                flex-wrap: wrap;
+              }
+              .flexbox1{
+                display:flex;
+                justify-content: right;
+                flex-wrap: wrap;
+              }
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2 id="UserLogin">User Login </h2>
+            
+            <form>
+              <div class="container">
+                <img src="photos/useravtar.png" class="avatar">
+              </div>
+            
+              <div class="container">
+                <label for="uname"><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Username" name="uname" required><br>
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br>
+                    
+                <button type="submit">Login</button><br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label><br>
+              </div>
+            
+             <!---- <div class="container" style="background-color:#f1f1f1">-->
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span><br><br>
+                <h5>---New to ORBVA----</h5>
+               <a href="./signup1.html">Create new account</a><br><br>
+              
+            </form>
+            <!--mechanic login-->
+            <h2 id="MechanicLogin">Mechanic Login </h2>
+            
+            <form>
+              <div class="flexbox1" >
+                <img src="photos/mechanicavtar.jpg" class="avatar2">
+              </div>
+            
+              <div class="container">
+                <label for="uname"><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Username" name="uname" required><br>
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br>
+                    
+                <button type="submit">Login</button><br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label><br>
+              </div>
+            
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span><br><br>
+                <h5>---New to ORBVA----</h5>
+               <a href="./signup1.html">Create new account</a><br><br>
+             
+            </form>
+            
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</head>
+
+</html>
